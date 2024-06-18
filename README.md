@@ -14,7 +14,7 @@ The purpose of this challege is to demonstrate fundamental skills of coding in P
 
 
 
-Resources:
+### Resources
 
 Some of this code was created by following along with the course instructor as he demonstrated how to complete the homework in [_Lecture Programming for AI: Part 1 III (June 10, 2024)._](https://bootcampspot.instructure.com/courses/6443/pages/2-programming-for-ai-part-1?module_item_id=1276984)
 
