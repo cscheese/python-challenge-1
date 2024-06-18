@@ -6,7 +6,7 @@ June 18th (late submission - June 19th)
 The purpose of this challege is to demonstrate fundamental skills of coding in Python including variables, data types, and data structures; performing mathematical operations and basic string manipulation; user input and basic input validation; programming decisions with conditional statements, loops, match case statements, and list comprehension.
 
 ### Brief Description of Challenge 
->In this weeks challenge uses the setting of a Food Truck and the need to set up an interactive ordering system. A menu file was adapted to allow customers to place an order, which includes requesting an input and storing the customer's order, and printing the receipt with the total price of all chosen items.(1)
+>This weeks challenge uses the setting of a Food Truck with the need to set up an interactive ordering system. A menu file was adapted to allow customers to place an order, which includes requesting an input and storing the customer's order, and printing the receipt with the total price of all chosen items.(1)
 
 
 ### Addendum / Sources & References
