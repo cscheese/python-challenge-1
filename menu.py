@@ -142,7 +142,7 @@ while place_order:
                 menu_selection = int(item_number)
 
                 # 4. Check if the menu selection is in the menu items
-               if menu_selection in menu_items.keys():
+                if menu_selection in menu_items.keys():
                                         
                     # Store the item name as a variable
                     item_name = menu_items[menu_selection]["Item name"]
@@ -157,7 +157,7 @@ while place_order:
                         quantity = 1
                     
                     # Add the item name, price, and quantity to the order list
-                     order_list.append({"Item_name": item_name, 
+                        order_list.append({"Item_name": item_name, 
                                   "Price": menu_items[item_name], 
                                   "Quantity": quantity})
 
@@ -165,7 +165,6 @@ while place_order:
                 else:
                     print("Invalid menu selection. Please choose a valid item from the menu")
                 
-
                 # Tell the customer they didn't select a menu option
                 print(f"{menu_category} was not a menu option.")
         else:
