@@ -133,13 +133,13 @@ while place_order:
             # 2. Ask customer to input menu item number
             order_list = []
             
-            item_number = input("\nWhat menu item number would you like to order?")
+            menu_selection = input("\nWhat menu item number would you like to order?")
 
             # 3. Check if the customer typed a number
-            if item_number.isdigit():
+            if menu_selection.isdigit():
                 
                 # Convert the menu selection to an integer
-                menu_selection = int(item_number)
+                menu_selection = int(menu_selection)
 
                 # 4. Check if the menu selection is in the menu items
                 if menu_selection in menu_items.keys():
