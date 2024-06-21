@@ -177,32 +177,28 @@ while place_order:
 
     while True:
      # Ask the customer if they would like to order anything else
-        keep_ordering = input("Would you like to keep ordering? (Y)es or (N)o ").upper()
+        keep_ordering = input("Would you like to keep ordering? (Y)es or (N)o ")
         
-
     # 5. Check the customer's input
-           
-        if keep_ordering == "Y":
-         # Keep ordering
-            break
-        elif keep_ordering == "N":
-            place_order = False
-            break            
-            # Exit the keep ordering question loop
-        else:
-             # Complete the order
-            
-            # Since the customer decided to stop ordering, thank them for
-            # their order
-            print("Thank you for your order")
-            # Exit the keep ordering question loop
-            break
-
-
+        match keep_ordering.lower():
+            case 'y':
+                # Keep ordering
+                place_order = True
+                # Exit the keep ordering question loop
+                break
+            case 'n':
+                # Complete the order
+                place_order = False
+                # Since the customer decided to stop ordering, thank them for
+                # their order
+                print("Thank you for your order.")
+                # Exit the keep ordering question loop
+                break
+            case _:
             # Tell the customer to try again
-
-
-    # Print out the customer's order
+                print("I didn't understand your response. Please try again.")
+            
+           # Print out the customer's order
     print("This is what we are preparing for you.\n")
 
     # Uncomment the following line to check the structure of the order
@@ -212,6 +208,9 @@ while place_order:
     print("--------------------------|--------|----------")
 
     # 6. Loop through the items in the customer's order
+for i in range(len(order_list)):
+    item_name = order_list[i]["Item name"]["Price"]["Quantity"] 
+    print(item_name)
 
     # 7. Store the dictionary items as variables
 
