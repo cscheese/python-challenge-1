@@ -166,10 +166,11 @@ while place_order:
             else:
             # Tell the customer they didn't select a menu option
                 print("Please select an item from the menu")
-    else:
+        else:
         # Tell the customer they didn't select a number
-        print("Please enter a valid number.")
-
+            print("Please enter a valid number.")
+    else:
+        print("Please select a valid number from the menu above.")
     while True:
      # Ask the customer if they would like to order anything else
         keep_ordering = input("Would you like to keep ordering? (Y)es or (N)o ")
@@ -199,38 +200,31 @@ print("This is what we are preparing for you.\n")
     # Uncomment the following line to check the structure of the order
     #print(order)
     
-    #print("Item name                 | Price  | Quantity")
-    #print("--------------------------|--------|----------")
+print("Item name                 | Price  | Quantity")
+print("--------------------------|--------|----------")
     
 
 menu_items = {}
     # 6. Loop through the items in the customer's order
 for i in range(len(order)):
         # 7. Store the dictionary items as variables 
-    item_name = order[i]["Item name"]
+    item_name = order[i]["Item_name"]
     price = order[i]["Price"]
     quantity = order[i]["Quantity"] 
-      
+           
         # 8. Calculate the number of spaces for formatted printing
-    space_name = " " * (30 - len(item_name)) #Will adjust based on length of the iterm name. 
-    space_price = " " * (10 - len(str(price))) # Will adjust base on the lenght of the price.
-    space_quantity = " " * (8 - len(str(quantity))) # Will adjust based on the length of the quantity.       print("Item name" + space_26 + "| Price" + space_7 + "| Quantity")
-    print("-" * 60)
-      
         # 9. Create space strings 
-    print(f"{item_name}{space_name}| ${price: .2f}{space_price} | {quantity}{space_quantity}")
-    
+    space_name = " " * (26 - len(item_name)) #Will adjust based on length of the item name. 
+    space_price = " " * (6 - len(str(price))) # Will adjust base on the lenght of the price.
+    space_quantity = " " * (7 - len(str(quantity))) # Will adjust based on the length of the quantity.       print("Item name" + space_26 + "| Price" + space_7 + "| Quantity")
+          
+      
         # 10. Print the item name, price, and quantity    
-    menu_items[i] = {
-            "Item_name": item_name,
-            "Price": price,
-            "Quantity": quantity
-                }
+    print(f"{item_name}{space_name}|${price: .2f}{space_price}|{quantity}")
 
 # 11. Calculate the cost of the order using list comprehension
 # Multiply the price by quantity for each item in the order list, then sum()
 # and print the prices.
 
-#sum([item["Price"] * item ["Quantity"] for item in order])
-#total_cost = sum([price * quantity for price, quantity in zip(price, quantity)])
-
+total_cost = sum([item["Price"] * item ["Quantity"] for item in order])
+print(f"The total cost for all the items is: ${total_cost:.2f}")
