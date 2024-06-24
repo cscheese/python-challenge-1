@@ -16,13 +16,10 @@ The purpose of this challege is to demonstrate fundamental skills of coding in P
 
 ### Resources Used
 
-Some of this code was created by following along with the course instructor as he demonstrated how to complete the homework in [_Lecture Programming for AI: Part 1 III (June 10, 2024)._](https://bootcampspot.instructure.com/courses/6443/pages/2-programming-for-ai-part-1?module_item_id=1276984)
+Some of this code was created by following along with the course instructor as he demonstrated how to complete the homework by copying and pasting code from course examples and activites. [_Lecture Programming for AI: Part 1 III (June 10, 2024)._](https://bootcampspot.instructure.com/courses/6443/pages/2-programming-for-ai-part-1?module_item_id=1276984)
 
-
-
-I also received help from my tutoring session on June 19th. 
-
-
+I worked extensively on this challenge. Resources included: reviewing and going through the class activities and homework, before class tutoring, Xpert Learning Assistant (helpful), some help from ChatGPT 4, but honestly it mostly was not incredibly helpful, I also connected with ASK BCS Learning, which was helpful and a tutoring session - where I learned a LOT!.
+All these resources were incredibly helpful. 
 
 ***
-|Carolyn Scheese|carolyn.scheese@utah.edu|
+|Carolyn Scheese|carolyn.scheese@utah.edu|U0447985
